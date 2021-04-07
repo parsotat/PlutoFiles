@@ -1,3 +1,4 @@
 PLUTO_PY_FILES/*.pdf
 PLUTO_PY_FILES/*.hdf5
 PLUTO_PY_FILES/_*
+.*
