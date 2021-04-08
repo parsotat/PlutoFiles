@@ -283,7 +283,7 @@ void PatchPluto::computeRefGradient(FArrayBox& gFab, FArrayBox& UFab,
       //this is a better way of adaptively refining cells following the jet propagation!!!!!!!!!!!!!!!!!
       //front and back of jet at
       r_jet_front=CONST_c*g_time*UNIT_LENGTH/UNIT_VELOCITY/UNIT_LENGTH;
-      r_jet_back=r_jet_front-1.1*CONST_c*g_inputParam[JET_ON]*UNIT_LENGTH/UNIT_VELOCITY/UNIT_LENGTH;
+      r_jet_back=r_jet_front-1.3*CONST_c*g_inputParam[JET_ON]*UNIT_LENGTH/UNIT_VELOCITY/UNIT_LENGTH;
       
       if (r_jet_front<=g_inputParam[R_STAR]) //if the jet hasnt broken out of the star yet, make sure that the star is fully resolved
       {
