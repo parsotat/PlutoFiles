@@ -213,15 +213,15 @@ void UserDefBoundary (const Data *d, RBox *box, int side, Grid *grid)
     }
     */
     
-    //to define the min density/pressure
+    //to define the min density/pressure, shouldnt do this for density b/c jet density can be lower than the ambient density, should also do this for lorentz factor b/c we dont want things to move faster than the jet
     if (side == 0)
     {
         TOT_LOOP(k,j,i)
         {
            if ((d->Vc[RHO][k][j][i] < g_inputParam[RHO_AMBIENT]) || (d->Vc[PRS][k][j][i] < g_inputParam[PRESS_AMBIENT]))
            {
-              d->Vc[RHO][k][j][i] = g_inputParam[RHO_AMBIENT];
-              d->Vc[PRS][k][j][i] < g_inputParam[PRESS_AMBIENT];
+              //d->Vc[RHO][k][j][i] = g_inputParam[RHO_AMBIENT];
+              d->Vc[PRS][k][j][i] = g_inputParam[PRESS_AMBIENT];
            }
         }
     }

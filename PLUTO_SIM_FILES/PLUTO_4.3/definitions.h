@@ -42,7 +42,7 @@
 #define  CHAR_LIMITING                  YES
 #define  EPS_PSHOCK_FLATTEN             2.5
 #define  ARTIFICIAL_VISC                0.1
-#define  UNIT_LENGTH                    1e8
+#define  UNIT_LENGTH                    1e9
 #define  UNIT_VELOCITY                  CONST_c
 #define  UNIT_DENSITY                   1.0
 #define  CHOMBO_REF_VAR                 RHO

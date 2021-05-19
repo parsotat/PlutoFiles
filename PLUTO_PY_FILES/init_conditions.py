@@ -19,7 +19,7 @@ def calcJetDensPres(lumi_total, gamma_inj, gamma_infinity, opening_angle, inner_
     # calculates the density and pressure in real and PLUTO units (same as FLASH units where density
     # is normalized by 1 and pressure is normalized by c**2
     # opening angle should be in degrees
-    #for 16TI sim do: calcJetDensPres(1.07e51, 5, 400, 10, 1e9)
+    #for 16TI sim do: calcJetDensPres(5.33e50, 5, 400, 10, 1e9)
     #for 20sp_down ic.calcJetDensPres(2*5.33e50, 5, 400, 10, 1e8) for first period and for FALLBACK_ENVELOPE_20SP_DOWN
 
     dens=lumi_total/(2*np.pi*c_light**3*inner_jet_radius**2*gamma_inj*gamma_infinity*(1-np.cos(opening_angle*np.pi/180)))
